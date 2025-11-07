@@ -5,16 +5,15 @@ import { Rocket, Star, Sparkles } from 'lucide-react';
 const Hero = () => {
   return (
     <section className="relative h-[90vh] min-h-[600px] w-full overflow-hidden bg-gradient-to-b from-sky-50 via-indigo-50 to-cyan-50 text-slate-900">
-      {/* Spline 3D Background */}
+      {/* Spline 3D Background (light, minimalist tile grid) */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/er66D6jbuo0hIjmn/scene.splinecode"
+          scene="https://prod.spline.design/zhZFnwyOYLgqlLWk/scene.splinecode"
           style={{ width: '100%', height: '100%' }}
         />
-        {/* Aurora sky overlays on top of Spline - keep interactive */}
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(70%_50%_at_50%_35%,rgba(99,102,241,0.18),rgba(14,0,26,0)_60%)]" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_40%_at_60%_55%,rgba(34,211,238,0.18),transparent_70%)]" />
-        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(40%_30%_at_20%_20%,rgba(168,85,247,0.14),transparent_70%)]" />
+        {/* Subtle, light overlays to keep interaction intact */}
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_35%,rgba(99,102,241,0.10),transparent_65%)]" />
+        <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(55%_45%_at_60%_65%,rgba(34,211,238,0.10),transparent_70%)]" />
       </div>
 
       {/* Content */}
